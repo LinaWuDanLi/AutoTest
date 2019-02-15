@@ -1,5 +1,0 @@
-zheshiyao hebingdeneirong
-111111
-这是在master上添加的内rong
-222222222
-这是在branch1 上添加的内容

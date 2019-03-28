@@ -17,7 +17,7 @@ import java.io.IOException;
 
 public class AddUserTest {
 
-    @Test(description = "添加用户接口")
+    @Test(dependsOnGroups = "loginTrue",description = "添加用户接口")
     public void  addUser() throws IOException, InterruptedException {
 //        查询数据库
         SqlSession session= DatabaseUtil.getSqlSession();

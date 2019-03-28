@@ -1,0 +1,35 @@
+[
+  {
+    "description":"模拟一个没有参数的get请求",
+    "request":{
+      "uri":"/getWithoutParamDemo",
+      "method":"get"
+    },
+    "response":{
+      "text":"这是一个没有参数的get请求",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
+      "cookies":{
+        "status":"100","beijing":"true"
+      }
+    }
+  },
+  {
+    "description":"模拟一个有参数的get请求",
+    "request":{
+      "uri":"/getWithParamDemo",
+      "method":"get",
+      "queries":{
+        "name":"张三",
+        "age":"90"
+      }
+    },
+    "response":{
+      "text":"这是一个有参数的get请求,张三回来了",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  }
+]

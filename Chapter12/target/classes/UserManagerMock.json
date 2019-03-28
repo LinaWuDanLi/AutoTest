@@ -1,0 +1,134 @@
+[
+  {
+    "description":"登陆接口，成功后返回cookies",
+    "request": {
+      "uri": "/v1/login",
+      "method": "post",
+      "json": {
+        "userName": "danli",
+        "password": "123456"
+      }
+    },
+      "response":{
+        "cookies":{
+          "login":"true"
+        },
+        "text":"1"
+      }
+
+  },
+  {
+    "description":"添加用户接口",
+     "request":{
+       "uri":"/v1/addUser",
+       "method":"post",
+       "json":{
+         "userName":"hejiong",
+         "password":"123456",
+         "sex":"man",
+         "age":40,
+         "permission":0,
+         "isDelete":0
+       },
+       "cookies":{
+         "login":"true"
+       }
+     },
+    "response":{
+      "text":"1"
+    }
+  },
+  {
+    "description":"获取用户信息接口",
+    "request":{
+      "uri":"/v1/getUserInfo",
+      "method":"post",
+      "json":{
+        "userId":1
+      },
+      "cookies":{
+        "login":"true"
+      }
+    },
+    "response":{
+      "json":{
+        "id":1,
+        "userName":"zhangsan",
+        "password":"123456",
+        "age":20,
+        "sex":"nv",
+        "permission":0,
+        "isDelete":0
+      }
+    }
+  },
+  {
+    "description": "获取用户列表接口",
+    "request": {
+      "uri": "/v1/getUserListInfo",
+      "method": "post",
+      "json": {
+        "sex": "nv"
+      },
+      "cookies":{
+        "login":"true"
+      }
+    },
+    "response": {
+      "json":[
+        {
+          "id":1,
+          "userName": "zhangsan",
+          "password": "123456",
+          "sex": "nv",
+          "age": 20,
+          "permission": 0,
+          "isDelete": 0
+        },
+        {
+          "id":2,
+          "userName": "lisi",
+          "password": "123456",
+          "sex": "nv",
+          "age": 30,
+          "permission": 0,
+          "isDelete": 0
+        }
+      ]
+    }
+},
+  {
+    "description":"修改用户信息接口",
+    "request":{
+      "uri":"/v1/updateUserInfo",
+      "method":"post",
+      "json":{
+        "userId":2,
+        "userName":"hahahaha"
+      },
+      "cookies":{
+        "login":"true"
+      }
+    },
+    "response":{
+      "text":"1"
+    }
+  },
+  {
+    "description":"删除用户信息接口",
+    "request":{
+      "uri":"/v1/updateUserInfo",
+      "method":"post",
+      "json":{
+        "userId":8,
+        "userName":"lisi"
+      },
+      "cookies":{
+        "login":"true"
+      }
+    },
+    "response":{
+      "text":"1"
+    }
+  }
+]

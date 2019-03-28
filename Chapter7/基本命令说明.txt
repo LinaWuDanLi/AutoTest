@@ -1,0 +1,63 @@
+启动moco http 协议：java -jar ./moco-runner-0.11.0-standalone.jar http -p 8888 -c json配置文件
+-p: port端口
+http：表示使用http协议，也可以是https，socket协议
+配置文件与jar包在同一目录下，否则应补全配置文件的路径
+启动moco后，打开浏览器，输入localhost:8888(端口号)+uri即可    /127.0.0.1:8888
+解决浏览器中访问接口时中文乱码：在json文件中的response中添加"headers":{"Content-Type":"text/html;charset=gbk"}
+带请求参数的get请求：http://localhost:8888/getWithParamDemo?name=zhangsan&age=90
+post请求不能在浏览器中打开，可用postman或者jmeter
+post的参数放在body中：key-values形式的参数用forms,raw形式的参数用json
+Moco交互过程中字符串乱码问题答疑启动命令中加入-Dfile.encoding=UTF-8 进行强制转换
+如：java -jar -Dfile.encoding=UTF-8 ./moco-runner-0.11.0-standalone.jar http -p 8821 -c startup2.json
+启动moco https 协议： java -jar ./moco-runner-0.12.0-standalone.jar https -p 8888 -c startup.json --https /path/to/cert.jks --cert mocohttps --keystore mocohttps
+制作https证书cert.jks:C:\Program Files\Java\jdk1.8.0_171\bin>keytool -genkey -alias danli -keypass mocohttps -keyalg RSA -keysize 1024 -validity 3650 -keystore G:/cert.jks -storepass mocohttps
+
+
+
+
+
+
+https://my.oschina.net/lhplj/blog/1603887
+HTTPS在传输数据之前需要客户端（浏览器）与服务端（网站）之间进行一次握手，在握手过程中将确立双方加密传输数据的密码信息。此时这里需要证书作为公钥，我们先制作一个证书。
+
+进入本地JAVA_HOME路径的bin目录下，shift+右键选择“在此打开命令窗口”
+
+使用jdk自带的证书工具生成证书，输入以下命令
+
+keytool -genkey -alias danli -keypass 123456 -keyalg RSA -keysize 1024 -validity 365 -keystore e:/zhengshu.jks -storepass 123456
+
+说明：
+
+ü   -alias zhwei (别名)
+
+ü   -keypass 123456(别名密码)
+
+ü   -keyalg RSA(生证书的算法名称，RSA是一种非对称加密算法)
+
+ü   -keysize 1024(密钥长度,证书大小)
+
+ü   -validity 365(证书有效期，天单位)
+
+ü   -keystore e:/zhengshu.keystore (指定生成证书的位置和证书名称)
+
+ü   -storepass 123456(获取keystore信息的密码)
+
+启动moco服务
+将证书拷贝到JSON文件，jar包所在的目录下，命令窗口运行以下命令
+
+java -jar ./moco-runner-0.11.0-standalone.jar https -p 443 -c startup2.json --https zhengshu.keystore --cert 123456 --keystore 123456
+
+说明：
+
+https ：协议改为了HTTPS
+
+-p 443：HTTPS默认请求端口号
+
+-c startup2.json ：指定读取的JSON文件
+
+--https zhengshu.keystore ： 指定读取的证书路径和证书名
+
+--cert 123456 ：秘钥的密码
+
+--keystore 123456：指定秘钥库的密码
+

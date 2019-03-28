@@ -1,0 +1,80 @@
+[
+{
+"description":"这是一个会返回cookie信息的get请求",
+"request":{
+"uri":"/getCookies",
+"method":"get"
+},
+"response":{
+"text":"恭喜你获得cookies信息!",
+"cookies":{
+        "status":"100"
+      },
+"headers":{
+"Content-Type":"text/html;charset=gbk"
+}
+}
+},
+  {
+    "description": "模拟一个携带cookies信息的get请求",
+    "request": {
+      "uri": "/get/with/cookies",
+      "method": "get",
+      "cookies":{
+             "status":"100"
+            }
+    },
+    "response": {
+      "text": "这是一个需要携带cookies信息才能访问的get请求",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description":"模拟一个携带cookies信息的post请求",
+    "request":{
+      "uri":"/post/with/cookies",
+      "method":"post",
+      "cookies":{
+        "status":"100"
+      },
+      "headers":{
+      "Content-Type":"application/json"
+      },
+      "json":{
+        "name":"zhangsan",
+        "age":"19"
+      }
+    },
+    "response":{
+      "headers":{
+      "Content-Type":"text/html;charset=gbk"
+      },
+      "json":{
+        "status":"1",
+        "text":"success"
+      }
+    }
+  },
+  {
+  "description":"表单提交的post请求",
+  "request":{
+  "uri":"/formPost",
+  "method":"post",
+  "headers":{
+   "Content-Type":"x-www-form-urlencoded"
+  },
+  "forms":{
+  "name":"lisi",
+  "age":"19"
+  }
+  },
+  "response":{
+  "json":{
+  "status":"1",
+  "message":"success"
+  }
+  }
+  }
+]

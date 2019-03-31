@@ -46,8 +46,8 @@
     <update id="updateUserInfo" parameterType="com.course.model.User" >
         update user
         <trim prefix="SET" suffixOverrides=",">
-            <if test="null !=id and ''!=id">
-                id=#{id},
+            <if test="null !=userName and ''!=userName">
+                userName=#{userName},
             </if>
             <if test="null !=password and ''!=password">
                 password=#{password},

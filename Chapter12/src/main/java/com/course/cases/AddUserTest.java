@@ -30,9 +30,9 @@ public class AddUserTest {
         User user=session.selectOne("addUser",addUserCase);
         System.out.println(user.toString());
 //        删除上面添加的用户
-        session.delete("deleteAddedUser",addUserCase.getId());
+         session.delete("deleteAddedUser",addUserCase.getId());
 //        进行增删改时需要提交事务
-        session.commit();
+         session.commit();
 //        判断返回的结果是否符合预期
         Assert.assertEquals(addUserCase.getExpected(),result);
     }

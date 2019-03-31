@@ -29,7 +29,7 @@ public class UpdateUserInfoTest {
         int result=getResult(updateUserInfoCase);
 
 //        获取更新后的结果
-        Thread.sleep(4000);
+        Thread.sleep(2000);
         User user=session.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
         System.out.println(user.toString());
 

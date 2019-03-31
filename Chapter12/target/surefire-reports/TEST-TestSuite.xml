@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="TestSuite" time="16.098" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="TestSuite" time="15.664" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2018.2.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -21,7 +21,7 @@
     <property name="basedir" value="G:\Danli\Workspace\muke\AutoTest\Chapter12"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_171\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="surefire.real.class.path" value="G:\Danli\Workspace\muke\AutoTest\Chapter12\target\surefire\surefirebooter2083083707286742926.jar"/>
+    <property name="surefire.real.class.path" value="G:\Danli\Workspace\muke\AutoTest\Chapter12\target\surefire\surefirebooter6025107622001986899.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\jj\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -29,7 +29,7 @@
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
     <property name="sun.jnu.encoding" value="GBK"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\IntelSWTools\Intel(R)_Media_SDK_2017.0.1\bin\x64;C:\Program Files (x86)\IntelSWTools\Intel(R)_Media_SDK_2017.0.1\bin\win32;C:\Perl64\site\bin;C:\Perl64\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Program Files\Git\cmd;E:\svn\bin;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;E:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE;C:\MinGW\bin;F:\android-sdk\Android\android-sdk\ndk-bundle;C:\Program Files\dotnet\;F:\nginx-rtmp\UnxUpdates;C:\node\;G:\丹丽\Fiddler;C:\Users\jj\AppData\Roaming\npm;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NetSarang\Xftp 6\;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\IntelSWTools\Intel(R)_Media_SDK_2017.0.1\bin\x64;C:\Program Files (x86)\IntelSWTools\Intel(R)_Media_SDK_2017.0.1\bin\win32;C:\Perl64\site\bin;C:\Perl64\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Program Files\Git\cmd;E:\svn\bin;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin;E:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE;C:\MinGW\bin;F:\android-sdk\Android\android-sdk\ndk-bundle;C:\Program Files\dotnet\;F:\nginx-rtmp\UnxUpdates;C:\node\;G:\丹丽\Fiddler;C:\Users\jj\AppData\Roaming\npm;."/>
     <property name="surefire.test.class.path" value="G:\Danli\Workspace\muke\AutoTest\Chapter12\target\test-classes;G:\Danli\Workspace\muke\AutoTest\Chapter12\target\classes;C:\Users\jj\.m2\repository\org\apache\httpcomponents\httpclient\4.1.2\httpclient-4.1.2.jar;C:\Users\jj\.m2\repository\org\apache\httpcomponents\httpcore\4.4.11\httpcore-4.4.11.jar;C:\Users\jj\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\jj\.m2\repository\org\json\json\20180813\json-20180813.jar;C:\Users\jj\.m2\repository\org\mybatis\mybatis\3.5.0\mybatis-3.5.0.jar;C:\Users\jj\.m2\repository\mysql\mysql-connector-java\8.0.12\mysql-connector-java-8.0.12.jar;C:\Users\jj\.m2\repository\org\projectlombok\lombok\1.18.6\lombok-1.18.6.jar;C:\Users\jj\.m2\repository\com\relevantcodes\extentreports\2.41.1\extentreports-2.41.1.jar;C:\Users\jj\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\jj\.m2\repository\org\xerial\sqlite-jdbc\3.25.2\sqlite-jdbc-3.25.2.jar;C:\Users\jj\.m2\repository\org\freemarker\freemarker\2.3.28\freemarker-2.3.28.jar;C:\Users\jj\.m2\repository\org\mongodb\mongodb-driver\3.8.2\mongodb-driver-3.8.2.jar;C:\Users\jj\.m2\repository\org\mongodb\bson\3.8.2\bson-3.8.2.jar;C:\Users\jj\.m2\repository\org\mongodb\mongodb-driver-core\3.8.2\mongodb-driver-core-3.8.2.jar;C:\Users\jj\.m2\repository\com\vimalselvam\testng-extentsreport\1.3.1\testng-extentsreport-1.3.1.jar;C:\Users\jj\.m2\repository\com\google\guava\guava\20.0\guava-20.0.jar;C:\Users\jj\.m2\repository\com\aventstack\extentreports\3.0.6\extentreports-3.0.6.jar;C:\Users\jj\.m2\repository\org\apache\httpcomponents\httpmime\4.5.7\httpmime-4.5.7.jar;C:\Users\jj\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\jj\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\jj\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\jj\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_171\jre"/>
-    <property name="sun.java.command" value="G:\Danli\Workspace\muke\AutoTest\Chapter12\target\surefire\surefirebooter2083083707286742926.jar G:\Danli\Workspace\muke\AutoTest\Chapter12\target\surefire\surefire8333152762100739425tmp G:\Danli\Workspace\muke\AutoTest\Chapter12\target\surefire\surefire5124132068895191177tmp"/>
+    <property name="sun.java.command" value="G:\Danli\Workspace\muke\AutoTest\Chapter12\target\surefire\surefirebooter6025107622001986899.jar G:\Danli\Workspace\muke\AutoTest\Chapter12\target\surefire\surefire7850108390688837450tmp G:\Danli\Workspace\muke\AutoTest\Chapter12\target\surefire\surefire4951763644795105473tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="zh"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -62,11 +62,11 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.course.cases.LoginTest" name="loginTrue" time="1.654"/>
-  <testcase classname="com.course.cases.LoginTest" name="loginFalse" time="0.05"/>
-  <testcase classname="com.course.cases.AddUserTest" name="addUser" time="4.166"/>
-  <testcase classname="com.course.cases.GetUserInfoTest" name="getUserInfo" time="2.066"/>
-  <testcase classname="com.course.cases.GetUserInfoListTest" name="getUserInfoList" time="2.148"/>
-  <testcase classname="com.course.cases.UpdateUserInfoTest" name="deleteUser" time="2.065"/>
-  <testcase classname="com.course.cases.UpdateUserInfoTest" name="updateUserInfo" time="2.05"/>
+  <testcase classname="com.course.cases.LoginTest" name="loginTrue" time="1.529"/>
+  <testcase classname="com.course.cases.LoginTest" name="loginFalse" time="0.052"/>
+  <testcase classname="com.course.cases.AddUserTest" name="addUser" time="4.104"/>
+  <testcase classname="com.course.cases.GetUserInfoTest" name="getUserInfo" time="2.062"/>
+  <testcase classname="com.course.cases.GetUserInfoListTest" name="getUserInfoList" time="2.102"/>
+  <testcase classname="com.course.cases.UpdateUserInfoTest" name="deleteUser" time="2.053"/>
+  <testcase classname="com.course.cases.UpdateUserInfoTest" name="updateUserInfo" time="2.067"/>
 </testsuite>
